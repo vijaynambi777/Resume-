@@ -1,0 +1,175 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.profile img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+.profile-info h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile-info p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  border-left: 4px solid #00bcd4;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+  color: #00d4ff;
+}
+
+ul {
+  padding-left: 1.5rem;
+  line-height: 1.8;
+}
+
+a {
+  color: #00e0ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.project {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project h3 {
+  color: #ffd700;
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  color: #ccc;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <img src="/IMG_20250225_220849_779.webp" alt="Profile Picture">
+      <div class="profile-info">
+        <h1>John Doe</h1>
+        <p>Full Stack Developer | React & Node.js Expert | UI/UX Designer</p>
+      </div>
+    </div><section>
+  <h2>About Me</h2>
+  <p>I'm a professional full-stack web developer with 5+ years of experience crafting responsive and interactive digital products. I specialize in building performant, accessible, and scalable web applications using modern technologies.</p>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <ul>
+    <li>Languages: HTML5, CSS3, JavaScript, TypeScript</li>
+    <li>Frontend: React, Next.js, Tailwind CSS</li>
+    <li>Backend: Node.js, Express, MongoDB, SQL</li>
+    <li>Tools: Git, Webpack, Figma, Postman</li>
+    <li>Practices: Responsive Design, REST APIs, Agile Development</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Portfolio</h2>
+  <div class="portfolio">
+    <div class="project">
+      <h3>Personal Portfolio</h3>
+      <p>A sleek, animated personal website to showcase my work and resume.</p>
+      <a href="#">View Project</a>
+    </div>
+    <div class="project">
+      <h3>Task Manager App</h3>
+      <p>A full-stack MERN app for managing daily tasks with user authentication.</p>
+      <a href="#">View Project</a>
+    </div>
+    <div class="project">
+      <h3>E-commerce Platform</h3>
+      <p>A scalable e-commerce frontend with React, integrated with Stripe API.</p>
+      <a href="#">View Project</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <ul>
+    <li>Email: <a href="mailto:johndoe@email.com">johndoe@email.com</a></li>
+    <li>Phone: <a href="tel:+1234567890">+1 234 567 890</a></li>
+    <li>LinkedIn: <a href="https://linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></li>
+    <li>GitHub: <a href="https://github.com/johndoe" target="_blank">github.com/johndoe</a></li>
+    <li>Website: <a href="https://johndoe.dev" target="_blank">johndoe.dev</a></li>
+  </ul>
+</section>
+
+  </div>
+</body>
+</html>
